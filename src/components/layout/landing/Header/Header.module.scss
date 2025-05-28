@@ -1,0 +1,68 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  width: 100%;
+  border-bottom: 1px solid #000;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+
+  > div {
+    display: flex;
+    height: 4rem;
+    align-items: center;
+    justify-content: space-between;
+
+    > div:first-child {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      > a {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+
+        > img {
+          object-fit: contain;
+        }
+
+        > span {
+          font-size: 1.25rem;
+          line-height: 1.75rem;
+          font-weight: 700;
+          color: #0a3b66;
+        }
+      }
+    }
+
+    > nav {
+      display: flex;
+      gap: 1.5rem;
+
+      > a {
+        text-decoration: none;
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+        font-weight: 500;
+        color: #020817;
+
+        &:hover {
+          color: #0a3b66;
+          transition: color 200ms;
+        }
+      }
+    }
+
+    > div:nth-child(3) {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      > a {
+        display: flex;
+      }
+    }
+  }
+}

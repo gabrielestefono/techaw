@@ -1,0 +1,20 @@
+.buttonWithIconLeftFilledOutlined {
+  min-width: 38px;
+  min-height: 22px;
+  border-radius: 0.375rem;
+  border-width: 0.0625rem;
+  cursor: pointer;
+  border-style: solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  box-sizing: content-box;
+
+  &:hover {
+    opacity: 0.5;
+  }
+}

@@ -1,0 +1,48 @@
+:root {
+  --white: #ffffff;
+  --gray: #e2e8f0;
+  --primary: #0a3b66;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/** Classes de ícones */
+
+.w16 {
+  width: 16px;
+}
+
+.h16 {
+  height: 16px;
+}
+
+/** Classes de cores outline */
+
+.grayOutline {
+  border-color: var(--gray);
+}
+
+.whiteOutline {
+  border-color: var(--white);
+}
+
+/** Classes de cores background */
+
+.whiteBg {
+  background-color: var(--white);
+}
+
+.primaryBg {
+  background-color: var(--primary);
+}
+
+/** Classe de cores */
+
+.white {
+  color: var(--white);
+}
