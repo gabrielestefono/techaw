@@ -1,0 +1,68 @@
+.heroSection {
+  width: 100%;
+  padding-block: 8rem;
+  background-image: linear-gradient(to right, #072a4a, #0a3b66);
+
+  > div {
+    width: 100%;
+    padding-inline: 1.5rem;
+
+    > div {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+      align-items: center;
+
+      > div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        > div:first-child {
+          gap: 0.5rem;
+
+          > h1 {
+            font-size: 3.75rem;
+            color: #ffffff;
+          }
+
+          > p {
+            max-width: 600px;
+            color: #e5e7eb;
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+          }
+        }
+
+        > div:nth-child(2) {
+          display: flex;
+          gap: 0.5rem;
+          flex-direction: row;
+        }
+      }
+
+      > div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+
+        > div {
+          position: relative;
+          width: 300px;
+          height: 300px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(0.5rem);
+          border-radius: 0.75rem;
+          padding: 2rem;
+
+          > img {
+            object-fit: contain;
+          }
+        }
+      }
+    }
+  }
+}

@@ -11,9 +11,10 @@ A nomenclatura de pasta irá seguir o seguinte padrão:
       * nome da página -> `Pelo componente ser específico, o componente deve ser colocado na página com o nome da página onde será colocado`
     * forms -> `componentes de formulários`
     * icons -> `componentes de ícones, como heroicons ou fontawesome, qualquer fonte pode ser utilizada, mas transformada em tsx`
-    * layout -> `componentes de layout, como header, footer.`
+    * layouts -> `componentes de layout, como header, footer.`
       * nome do layout -> `Caso necessário mais de um layout, nomear cada um deles`
-    * lottie -> `Animações criadas com o lottie`
+    * lotties -> `Animações criadas com o lottie`
+    * sections -> `componentes visuais estáticos de página, organizados por página quando necessário. Não dependem de dados dinâmicos nem lógica de formulário.`
   * contexts -> `deve conter todos os contexts do react`
   * interfaces -> `deve conter as interfaces do typescript`
   * hooks -> `deve conter todos os hooks do react`

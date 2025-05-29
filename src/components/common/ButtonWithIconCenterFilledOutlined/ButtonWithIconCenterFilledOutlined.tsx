@@ -1,13 +1,12 @@
 import { PropsWithChildren } from "react";
 import styles from "./ButtonWithIconCenterFilledOutlined.module.scss";
-import { OutlineColors } from "@/enums/OutlineColors.enum";
-import { BackgroundColors } from "@/enums/BackgroundColors.enum";
-import { Colors } from "@/enums/Colors.enum";
-
+import { OutlineColorsType } from "@/constants/OutlineColors";
+import { BackgroundColorsType } from "@/constants/BackgroundColors";
+import { ColorsType } from "@/constants/Colors";
 interface ButtonWithIconCenterFilledOutlinedProps {
-  outlineColor: OutlineColors;
-  backgroundColor: BackgroundColors;
-  color?: Colors;
+  outlineColor: OutlineColorsType;
+  backgroundColor: BackgroundColorsType;
+  color?: ColorsType;
 }
 
 export default function ButtonWithIconCenterFilledOutlined({
