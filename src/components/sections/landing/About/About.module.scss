@@ -1,0 +1,141 @@
+.about {
+  width: 100%;
+  padding-block: 8.25rem;
+
+  > div {
+    padding: 0 1.5rem;
+
+    > div:first-child {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      text-align: center;
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        > h2 {
+          font-size: 3rem;
+          font-weight: 700;
+          color: #0a3b66;
+        }
+
+        > p {
+          max-width: 56.25rem;
+          color: #6a7282;
+          font-size: 1.125rem;
+          line-height: 1.75rem;
+        }
+      }
+    }
+
+    > div:nth-child(2) {
+      margin: 0 auto;
+      display: grid;
+      align-items: center;
+      padding-block: 3rem;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 3rem;
+      max-width: 64rem;
+
+      > div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+
+        > ul {
+          display: grid;
+          gap: 1.5rem;
+
+          > li {
+            list-style: none;
+
+            > div {
+              display: grid;
+              gap: 0.25rem;
+
+              > div {
+                display: flex;
+                align-items: center;
+                gap: 4;
+
+                > div {
+                  display: flex;
+                  height: 2.5rem;
+                  width: 2.5rem;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 2.5rem;
+                  background-color: rgba(10, 59, 102, 0.1);
+                }
+
+                > h3 {
+                  font-size: 1.25rem;
+                  font-weight: 700;
+                  color: #0a3b66;
+                }
+              }
+              > p {
+                color: #6a7282;
+              }
+            }
+          }
+        }
+      }
+
+      > div:nth-child(2) {
+        display: flex;
+        justify-content: center;
+
+        > div {
+          height: 25rem;
+          width: 100%;
+          overflow: hidden;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 0.75rem;
+          background-color: #0a3b66;
+
+          > div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            > div {
+              padding: 2rem;
+              text-align: center;
+              color: white;
+
+              > h3 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+              }
+
+              > p {
+                margin-bottom: 1.5rem;
+
+                &:last-child {
+                  font-weight: 700;
+                  margin-top: 1.5rem;
+                  margin-bottom: 0;
+                }
+              }
+
+              > div {
+                display: flex;
+                justify-content: center;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
