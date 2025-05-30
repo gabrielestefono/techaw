@@ -11,38 +11,44 @@
   font-family: "Inter", sans-serif;
 }
 
-/** Classes de ícones */
+$sizes: (
+  16: 16,
+);
 
-.w16 {
-  width: 16px;
+$colors: (
+  "white": var(--white),
+  "gray": var(--gray),
+  "primary": var(--primary),
+);
+
+@each $key, $value in $sizes {
+  .w#{$key} {
+    width: #{$value}px;
+  }
+
+  .h#{$key} {
+    height: #{$value}px;
+  }
 }
 
-.h16 {
-  height: 16px;
-}
+@each $name, $value in $colors {
+  .#{$name} {
+    color: #{$value};
+  }
 
-/** Classes de cores outline */
+  .#{$name}Hover:hover {
+    color: #{$value};
+  }
 
-.grayOutline {
-  border-color: var(--gray);
-}
+  .#{$name}Outline {
+    border-color: #{$value};
+  }
 
-.whiteOutline {
-  border-color: var(--white);
-}
+  .#{$name}Bg {
+    background-color: #{$value};
+  }
 
-/** Classes de cores background */
-
-.whiteBg {
-  background-color: var(--white);
-}
-
-.primaryBg {
-  background-color: var(--primary);
-}
-
-/** Classe de cores */
-
-.white {
-  color: var(--white);
+  .#{$name}BgHover:hover {
+    background-color: #{$value};
+  }
 }

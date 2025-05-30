@@ -2,12 +2,12 @@ import Link from "next/link";
 import styles from "./Header.module.scss";
 import Image from "next/image";
 import MagnifyingGlassIcon from "@/components/icons/MagnifyingGlassIcon";
-import { BackgroundColors } from "@/enums/BackgroundColors.enum";
-import { OutlineColors } from "@/enums/OutlineColors.enum";
 import ButtonWithIconLeftFilledOutlined from "@/components/common/ButtonWithIconLeftFilledOutlined/ButtonWithIconLeftFilledOutlined";
 import PhoneIcon from "@/components/icons/PhoneIcon";
-import { Colors } from "@/enums/Colors.enum";
 import ButtonFilledOutlined from "@/components/common/ButtonWithIconCenterFilledOutlined/ButtonWithIconCenterFilledOutlined";
+import { BackgroundColors } from "@/constants/BackgroundColors";
+import { OutlineColors } from "@/constants/OutlineColors";
+import { Colors } from "@/constants/Colors";
 
 export default function Header() {
   return (
