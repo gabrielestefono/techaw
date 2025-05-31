@@ -2,6 +2,7 @@
   --white: #ffffff;
   --gray: #e2e8f0;
   --primary: #0a3b66;
+  --primary-dark: #072a4a;
 }
 
 * {
@@ -14,6 +15,7 @@
 $sizes: (
   16: 16,
   20: 20,
+  32: 32,
   64: 64,
 );
 
@@ -21,6 +23,7 @@ $colors: (
   "white": var(--white),
   "gray": var(--gray),
   "primary": var(--primary),
+  "primary-dark": var(--primary-dark),
 );
 
 @each $key, $value in $sizes {
