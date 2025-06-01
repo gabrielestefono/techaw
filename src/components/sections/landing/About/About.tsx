@@ -6,10 +6,11 @@ import WrenchIcon from "@/components/icons/WrenchIcon";
 import TruckIcon from "@/components/icons/TruckIcon";
 import P from "@/components/common/P/P";
 import SectionHeaderWithSubtitleBared from "@/components/blocks/SectionHeaderWithSubtitleBared/SectionHeaderWithSubtitleBared";
+import H3 from "@/components/common/H3/H3";
 
 export default function About() {
   return (
-    <section id="sobre" className={styles.about}>
+    <section className={styles.about}>
       <div>
         <SectionHeaderWithSubtitleBared
           title="Sobre a Haw Tec"
@@ -26,7 +27,7 @@ export default function About() {
                     <div>
                       <CpuIcon h={20} w={20} color={Colors.PRIMARY} />
                     </div>
-                    <h3>Equipamentos</h3>
+                    <H3>Equipamentos</H3>
                   </div>
                   <P variation="primary">
                     Oferecemos uma ampla gama de equipamentos de informática de
@@ -40,7 +41,7 @@ export default function About() {
                     <div>
                       <PrinterIcon h={20} w={20} color={Colors.PRIMARY} />
                     </div>
-                    <h3>Suprimentos</h3>
+                    <H3>Suprimentos</H3>
                   </div>
                   <P variation="primary">
                     Toners, cartuchos, papéis e todos os suprimentos necessários
@@ -54,9 +55,8 @@ export default function About() {
                     <div>
                       <WrenchIcon h={20} w={20} color={Colors.PRIMARY} />
                     </div>
-                    <h3>Manutenção</h3>
+                    <H3>Manutenção</H3>
                   </div>
-                  <p></p>
                   <P variation="primary">
                     Serviços de manutenção preventiva e corretiva para garantir
                     o funcionamento ideal dos seus equipamentos.
@@ -69,12 +69,18 @@ export default function About() {
             <div>
               <div>
                 <div>
-                  <h3>Haw Tec</h3>
-                  <p>Tecnologia e qualidade ao seu alcance</p>
+                  <div>
+                    <H3 variation="secondary">Haw Tec</H3>
+                  </div>
+                  <div>
+                    <P variation="secondary">Tecnologia e qualidade ao seu alcance</P>
+                  </div>
                   <div>
                     <TruckIcon h={64} w={64} color={Colors.WHITE} />
                   </div>
-                  <p>Entrega gratuita em Brasília - DF</p>
+                  <div>
+                    <P variation="secondary" weight="bold">Entrega gratuita em Brasília - DF</P>
+                  </div>
                 </div>
               </div>
             </div>

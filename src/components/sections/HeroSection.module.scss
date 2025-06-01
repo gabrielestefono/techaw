@@ -22,16 +22,8 @@
         > div:first-child {
           gap: 0.5rem;
 
-          > h1 {
-            font-size: 3.75rem;
-            color: #ffffff;
-          }
-
-          > p {
-            max-width: 600px;
-            color: #e5e7eb;
-            font-size: 1.25rem;
-            line-height: 1.75rem;
+          > div {
+            margin-top: .5rem;
           }
         }
 
