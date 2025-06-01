@@ -4,6 +4,7 @@ import HeroSection from "@/components/sections/HeroSection";
 import About from "@/components/sections/landing/About/About";
 import Services from "@/components/sections/landing/Services/Services";
 import ProductsCategories from "@/components/sections/landing/ProductsCategories/ProductsCategories";
+import Testimonials from "@/components/sections/landing/Testimonials/Testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
           <About />
           <Services />
           <ProductsCategories />
+          <Testimonials />
         </div>
       </div>
     </Landing>

@@ -4,8 +4,10 @@ export default function MagnifyingGlassIcon({
   h,
   w,
   color,
+  filledColor,
+  strokeColor,
 }: Readonly<IconsInterface>) {
-  const className = `w${w} h${h} ${color ?? ""}`;
+  const className = `w${w} h${h} ${color ?? ""} ${filledColor} ${strokeColor}`;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

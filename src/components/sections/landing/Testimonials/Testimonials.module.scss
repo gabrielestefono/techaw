@@ -1,0 +1,19 @@
+.testimonials {
+  width: 100%;
+  padding-block: 8rem;
+  background-color: #f9fafb;
+
+  > div{
+    width: 100%;
+    padding-inline: 1.5rem;
+
+    > div:nth-child(2){
+      margin: 0 auto;
+      display: grid;
+      max-width: 64rem;
+      gap: 2rem;
+      padding-block: 3rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
