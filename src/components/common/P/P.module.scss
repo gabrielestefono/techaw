@@ -1,4 +1,7 @@
 // Tipos padrão
+.p {
+  width: 100%;
+}
 
 .subtitle {
   color: #6a7282;
@@ -20,10 +23,23 @@
   color: #ffffff;
 }
 
+.textTerciary {
+  color: #0a3b66;
+}
+
+.textQuaternary {
+  font-size: 0.875rem;
+  color: #6a7282;
+}
+
 // Styles
 
 .italic {
   font-style: italic;
+}
+
+.normal {
+  font-style: normal;
 }
 
 // Weight

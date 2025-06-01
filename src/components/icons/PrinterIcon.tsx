@@ -1,7 +1,13 @@
 import { IconsInterface } from "@/interfaces/Icons";
 
-export default function PrinterIcon({ h, w, color }: Readonly<IconsInterface>) {
-  const className = `w${w} h${h} ${color ?? ""}`;
+export default function PrinterIcon({
+  h,
+  w,
+  color,
+  filledColor,
+  strokeColor,
+}: Readonly<IconsInterface>) {
+  const className = `w${w} h${h} ${color ?? ""} ${filledColor} ${strokeColor}`;
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

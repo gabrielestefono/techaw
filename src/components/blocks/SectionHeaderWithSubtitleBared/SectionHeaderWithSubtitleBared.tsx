@@ -15,7 +15,7 @@ export default function SectionHeaderWithSubtitleBared({
     <div className={styles.sectionHeaderWithSubtitleBared}>
       <div>
         <H2>{title}</H2>
-        <P variation="subtitle">{subtitle}</P>
+        <P variation="subtitle" alignment="center">{subtitle}</P>
       </div>
     </div>
   );

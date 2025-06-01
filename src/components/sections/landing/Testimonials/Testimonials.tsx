@@ -28,7 +28,7 @@ export default function Testimonials() {
             name="Roberto Santos"
             company="Escritório de Advocacia"
             testimonial="Compramos impressoras e contratamos o serviço de manutenção. Ótimo custo-benefício e atendimento de primeira."
-            rating={4}
+            rating={3}
           />
           <TestimonialCardOutlined
             name="Fernanda Costa"

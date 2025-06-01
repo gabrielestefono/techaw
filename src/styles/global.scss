@@ -1,6 +1,7 @@
 :root {
   --white: #ffffff;
   --gray: #e2e8f0;
+  --gray-dark: #d1d5dc;
   --primary: #0a3b66;
   --primary-dark: #072a4a;
   --yellow: #facc15;
@@ -23,6 +24,7 @@ $sizes: (
 $colors: (
   "white": var(--white),
   "gray": var(--gray),
+  "gray-dark": var(--gray-dark),
   "primary": var(--primary),
   "primary-dark": var(--primary-dark),
   "yellow": var(--yellow),
@@ -65,5 +67,13 @@ $colors: (
 
   .#{$name}BorderHover:hover {
     border: 1px solid #{$value} !important;
+  }
+
+  .#{$name}Fill {
+    fill: #{$value};
+  }
+
+  .#{$name}Stroke {
+    stroke: #{$value};
   }
 }

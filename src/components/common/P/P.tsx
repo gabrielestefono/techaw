@@ -3,7 +3,13 @@
 import { PropsWithChildren } from "react";
 import styles from "./P.module.scss";
 
-type Variation = "subtitle" | "primary" | "section-subtitle" | "secondary";
+type Variation =
+  | "subtitle"
+  | "primary"
+  | "section-subtitle"
+  | "secondary"
+  | "terciary"
+  | "quaternary";
 
 type Alignment = "left" | "right" | "center";
 
@@ -44,6 +50,10 @@ export default function P({
         return styles.textPrimary;
       case "secondary":
         return styles.textSecondary;
+      case "terciary":
+        return styles.textTerciary;
+      case "quaternary":
+        return styles.textQuaternary;
       default:
         return styles.textPrimary;
     }
@@ -99,7 +109,7 @@ export default function P({
   })(alignment);
   return (
     <p
-      className={`${variationType} ${styleType} ${weigthType} ${alignmentType}`}
+      className={`${styles.p} ${variationType} ${styleType} ${weigthType} ${alignmentType}`}
     >
       {children}
     </p>

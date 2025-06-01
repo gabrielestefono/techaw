@@ -1,7 +1,8 @@
 import StarIcon from "@/components/icons/StarIcon";
 import styles from "./TestimonialCardOutlined.module.scss";
-import { Colors } from "@/constants/Colors";
 import P from "@/components/common/P/P";
+import { FillColors } from "@/constants/FillColors";
+import { StrokeColors } from "@/constants/StrokeColors";
 
 interface TestimonialCardOutlinedProps {
   name: string;
@@ -19,16 +20,22 @@ export default function TestimonialCardOutlined({
   return (
     <div className={styles.testimonialCardOutlined}>
       <div>
-        {Array.from({ length: rating }).map(() => (
-          <StarIcon key={rating} h={20} w={20} color={Colors.YELLOW} />
+        {Array.from({ length: 5 }).map((value, i) => (
+          <StarIcon
+            key={`${value}${i}`}
+            h={20}
+            w={20}
+            filledColor={i + 1 > rating ? FillColors.WHITE : FillColors.YELLOW}
+            strokeColor={i + 1 > rating ? StrokeColors.GRAYDARK : StrokeColors.YELLOW}
+          />
         ))}
       </div>
       <P variation="primary">{`"${testimonial}"`}</P>
       <div>
-        <p></p>
-        <P variation="primary">{name}</P>
-        <P variation="primary">{company}</P>
-        <p></p>
+        <P variation="terciary" weight="semi-bold">
+          {name}
+        </P>
+        <P variation="quaternary">{company}</P>
       </div>
     </div>
   );
