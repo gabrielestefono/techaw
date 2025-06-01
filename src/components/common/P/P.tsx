@@ -3,7 +3,7 @@
 import { PropsWithChildren } from "react";
 import styles from "./P.module.scss";
 
-type Variation = "subtitle" | "primary";
+type Variation = "subtitle" | "primary" | "primary-centered";
 
 export default function P({
   children,
@@ -15,6 +15,8 @@ export default function P({
         return styles.subtitle;
       case "primary":
         return styles.textPrimary;
+      case "primary-centered":
+        return styles.textPrimaryCentered;
       default:
         return "Oi";
     }
