@@ -1,17 +1,17 @@
 import SectionHeaderWithSubtitleBared from "@/components/blocks/SectionHeaderWithSubtitleBared/SectionHeaderWithSubtitleBared";
-import styles from "./Products.module.scss";
 import AFilled from "@/components/common/AFilled/AFilled";
+import ProductCategoryCardOutlined from "@/components/containers/ProductCategoryCardOutlined/ProductCategoryCardOutlined";
+import CpuIcon from "@/components/icons/CpuIcon";
+import PrinterIcon from "@/components/icons/PrinterIcon";
 import { BackgroundColors } from "@/constants/BackgroundColors";
 import { BackgroundHoverColors } from "@/constants/BackgroundHoverColors";
 import { Colors } from "@/constants/Colors";
 import { HoverColors } from "@/constants/HoverColors";
-import ProductCategoryCardOutlined from "@/components/containers/ProductCategoryCardOutlined/ProductCategoryCardOutlined";
-import CpuIcon from "@/components/icons/CpuIcon";
-import PrinterIcon from "@/components/icons/PrinterIcon";
+import styles from "./ProductsCategories.module.scss";
 
-export default function Products() {
+export default function ProductsCategories() {
   return (
-    <section className={styles.products}>
+    <section className={styles.productsCategories}>
       <div>
         <SectionHeaderWithSubtitleBared
           subtitle="Explore nossa ampla gama de produtos de informática."

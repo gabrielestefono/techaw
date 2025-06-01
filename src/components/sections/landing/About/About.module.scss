@@ -45,13 +45,8 @@
                   border-radius: 2.5rem;
                   background-color: rgba(10, 59, 102, 0.1);
                 }
-
-                > h3 {
-                  font-size: 1.25rem;
-                  font-weight: 700;
-                  color: #0a3b66;
-                }
               }
+
               > p {
                 color: #6a7282;
               }
@@ -84,25 +79,22 @@
               text-align: center;
               color: white;
 
-              > h3 {
-                font-size: 1.5rem;
-                font-weight: 700;
+              > div:nth-child(1) {
                 margin-bottom: 1rem;
               }
 
-              > p {
+              > div:nth-child(2) {
                 margin-bottom: 1.5rem;
-
-                &:last-child {
-                  font-weight: 700;
-                  margin-top: 1.5rem;
-                  margin-bottom: 0;
-                }
               }
 
-              > div {
+              > div:nth-child(3) {
                 display: flex;
                 justify-content: center;
+              }
+
+              > div:nth-child(4) {
+                margin-top: 1.5rem;
+                margin-bottom: 0;
               }
             }
           }

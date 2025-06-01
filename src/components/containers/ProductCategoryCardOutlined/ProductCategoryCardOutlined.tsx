@@ -8,6 +8,7 @@ import { Colors } from "@/constants/Colors";
 import { HoverColors } from "@/constants/HoverColors";
 import { BorderColor } from "@/constants/BorderColor";
 import { BorderHoverColor } from "@/constants/BorderHoverColor";
+import H3 from "@/components/common/H3/H3";
 
 interface ProductCategoryCardOutlinedProps {
   icon: ReactNode;
@@ -23,8 +24,10 @@ export default function ProductCategoryCardOutlined({
   return (
     <div className={styles.productCategoryCardOutlined}>
       <div>{icon}</div>
-      <h3>{title}</h3>
-      <P variation="primary-centered">{description}</P>
+      <H3>{title}</H3>
+      <P variation="primary" alignment="center">
+        {description}
+      </P>
       <AFilledOutlined
         backgroundColor={BackgroundColors.WHITE}
         backgroundHoverColor={BackgroundHoverColors.PRIMARY}
