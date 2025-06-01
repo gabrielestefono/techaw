@@ -56,4 +56,12 @@ $colors: (
   .#{$name}BgHover:hover {
     background-color: #{$value};
   }
+
+  .#{$name}Border {
+    border: 1px solid #{$value};
+  }
+
+  .#{$name}BorderHover:hover {
+    border: 1px solid #{$value} !important;
+  }
 }
