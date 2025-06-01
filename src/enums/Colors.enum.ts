@@ -3,4 +3,5 @@ export enum Colors {
   GRAY = "gray",
   PRIMARY = "primary",
   PRIMARYDARK = "primary-dark",
+  YELLOW = "yellow",
 }

@@ -3,6 +3,7 @@
   --gray: #e2e8f0;
   --primary: #0a3b66;
   --primary-dark: #072a4a;
+  --yellow: #facc15;
 }
 
 * {
@@ -24,6 +25,7 @@ $colors: (
   "gray": var(--gray),
   "primary": var(--primary),
   "primary-dark": var(--primary-dark),
+  "yellow": var(--yellow),
 );
 
 @each $key, $value in $sizes {
