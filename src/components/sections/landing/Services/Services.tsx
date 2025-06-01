@@ -1,4 +1,3 @@
-import P from "@/components/common/P/P";
 import styles from "./Services.module.scss";
 import SectionHeaderWithSubtitleBared from "@/components/blocks/SectionHeaderWithSubtitleBared/SectionHeaderWithSubtitleBared";
 import CpuIcon from "@/components/icons/CpuIcon";
@@ -9,6 +8,7 @@ import AFilled from "@/components/common/AFilled/AFilled";
 import { BackgroundColors } from "@/constants/BackgroundColors";
 import { BackgroundHoverColors } from "@/constants/BackgroundHoverColors";
 import { HoverColors } from "@/constants/HoverColors";
+import ServiceCardOutlined from "@/components/containers/ServiceCardOutlined/ServiceCardOutlined";
 
 export default function Services() {
   return (
@@ -20,36 +20,24 @@ export default function Services() {
               necessidades de informática."
         />
         <div>
-          <div>
-            <div>
-              <CpuIcon h={32} w={32} color={Colors.WHITE} />
-            </div>
-            <h3>Venda de Equipamentos</h3>
-            <P variation="primary">
-              Computadores, notebooks, impressoras e periféricos das melhores
-              marcas.
-            </P>
-          </div>
-          <div>
-            <div>
-              <PrinterIcon h={32} w={32} color={Colors.WHITE} />
-            </div>
-            <h3>Suprimentos</h3>
-            <P variation="primary">
-              Toners, cartuchos, papéis e outros suprimentos para impressoras e
-              equipamentos.
-            </P>
-          </div>
-          <div>
-            <div>
-              <WrenchIcon h={32} w={32} color={Colors.WHITE} />
-            </div>
-            <h3>Manutenção</h3>
-            <P variation="primary">
-              Serviços de manutenção preventiva e corretiva para seus
-              equipamentos.
-            </P>
-          </div>
+          <ServiceCardOutlined
+            description="Computadores, notebooks, impressoras e periféricos das melhores
+              marcas."
+            icon={<CpuIcon h={32} w={32} color={Colors.WHITE} />}
+            title="Venda de Equipamentos"
+          />
+          <ServiceCardOutlined
+            description="Toners, cartuchos, papéis e outros suprimentos para impressoras e
+              equipamentos."
+            icon={<PrinterIcon h={32} w={32} color={Colors.WHITE} />}
+            title="Suprimentos"
+          />
+          <ServiceCardOutlined
+            description="Serviços de manutenção preventiva e corretiva para seus
+              equipamentos."
+            icon={<WrenchIcon h={32} w={32} color={Colors.WHITE} />}
+            title="Manutenção"
+          />
         </div>
         <div>
           <AFilled

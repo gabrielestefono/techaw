@@ -5,6 +5,8 @@ import { BackgroundColors } from "@/constants/BackgroundColors";
 import { BackgroundHoverColors } from "@/constants/BackgroundHoverColors";
 import { HoverColors } from "@/constants/HoverColors";
 import { Colors } from "@/constants/Colors";
+import H1 from "../common/H1/H1";
+import P from "../common/P/P";
 
 export default function HeroSection() {
   return (
@@ -13,11 +15,13 @@ export default function HeroSection() {
         <div>
           <div>
             <div>
-              <h1>Soluções em Informática para o seu Negócio</h1>
-              <p>
-                Equipamentos, suprimentos e manutenção com entrega gratuita em
-                Brasília - DF
-              </p>
+              <H1>Soluções em Informática para o seu Negócio</H1>
+              <div>
+                <P variation="section-subtitle">
+                  Equipamentos, suprimentos e manutenção com entrega gratuita em
+                  Brasília - DF
+                </P>
+              </div>
             </div>
             <div>
               <AFilled
