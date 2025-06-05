@@ -1,5 +1,7 @@
+// app/layout.tsx
 import type { Metadata } from "next";
 import "../styles/global.scss";
+import { inter } from "./fonts"; // Importando a fonte
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -8,24 +10,12 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="pt-br">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin=""
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-          rel="stylesheet"
-        ></link>
-      </head>
-      <body>{children}</body>
+    <html lang="pt-br" className={inter.variable}>
+      <body className="font-sans">{children}</body>
     </html>
   );
 }
