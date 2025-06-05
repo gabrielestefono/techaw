@@ -1,6 +1,6 @@
 import Landing from "@/layouts/Landing";
 import styles from "../styles/Landing.module.scss";
-import HeroSection from "@/components/sections/HeroSection";
+import HeroSection from "@/components/sections/landing/Hero/HeroSection";
 import About from "@/components/sections/landing/About/About";
 import Services from "@/components/sections/landing/Services/Services";
 import ProductsCategories from "@/components/sections/landing/ProductsCategories/ProductsCategories";

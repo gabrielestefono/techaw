@@ -1,18 +1,24 @@
 .about {
   width: 100%;
   padding-block: 8.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   > div {
-    padding: 0 1.5rem;
-
+    padding: 0;
+    width: 100%;
+    max-width: 90rem;
+    padding-inline: 2rem;
+    
     > div:nth-child(2) {
-      margin: 0 auto;
+      width: 100%;
+      justify-content: space-between;
       display: grid;
       align-items: center;
       padding-block: 3rem;
       grid-template-columns: repeat(2, 1fr);
       gap: 3rem;
-      max-width: 64rem;
 
       > div:nth-child(1) {
         display: flex;
