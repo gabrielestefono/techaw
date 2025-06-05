@@ -1,12 +1,12 @@
 import Image from "next/image";
-import styles from "./HeroSection.module.scss";
-import AFilled from "../common/AFilled/AFilled";
+import styles from "@/components/sections/landing/Hero/HeroSection.module.scss";
+import AFilled from "../../../common/AFilled/AFilled";
 import { BackgroundColors } from "@/constants/BackgroundColors";
 import { BackgroundHoverColors } from "@/constants/BackgroundHoverColors";
 import { HoverColors } from "@/constants/HoverColors";
 import { Colors } from "@/constants/Colors";
-import H1 from "../common/H1/H1";
-import P from "../common/P/P";
+import H1 from "../../../common/H1/H1";
+import P from "../../../common/P/P";
 
 export default function HeroSection() {
   return (

@@ -2,19 +2,22 @@
   width: 100%;
   padding-block: 8rem;
   background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   > div {
     width: 100%;
-    padding-inline: 1.5rem;
+    max-width: 90rem;
+    padding-inline: 2rem;
 
     > div:nth-child(2) {
-      margin: 0 auto;
       display: grid;
-      max-width: 64rem;
       gap: 2rem;
       padding-block: 3rem;
       grid-template-columns: repeat(3, 1fr);
     }
+
     > div:nth-child(3) {
       width: 100%;
       display: flex;
