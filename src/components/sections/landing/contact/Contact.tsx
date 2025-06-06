@@ -1,6 +1,6 @@
-import ContactForm from "@/components/form/ContactForm/ContactForm";
+// import ContactForm from "@/components/form/ContactForm/ContactForm";
 import styles from "./Contact.module.scss";
-import H3 from "@/components/common/H3/H3";
+// import H3 from "@/components/common/H3/H3";
 import H2 from "@/components/common/H2/H2";
 import P from "@/components/common/P/P";
 import MapPinIcon from "@/components/icons/MapPinIcon";
@@ -14,8 +14,12 @@ import { BackgroundHoverColors } from "@/constants/BackgroundHoverColors";
 import { HoverColors } from "@/constants/HoverColors";
 
 export default function Contact() {
+  const whatsappNumber = "55619106-4220";
+  const message = "Olá! Encontrei o seu website, preciso de ajuda!";
+  const whatsappLink = `https://api.whatsapp.com/send/?phone=${whatsappNumber}&text=${message}`;
+  const InstagramLink = "https://www.instagram.com/haw_tec";
   return (
-    <section className={styles.contact}>
+    <section className={styles.contact} id="contato">
       <div>
         <div>
           <div>
@@ -39,19 +43,19 @@ export default function Contact() {
               <li>
                 <div>
                   <PhoneIcon h={20} w={20} color={Colors.WHITE} />
-                  <span>(61) 9XXXX-XXXX</span>
+                  <span>(61) 9-9106-4220</span>
                 </div>
               </li>
               <li>
                 <div>
                   <EmailIcon h={20} w={20} color={Colors.WHITE} />
-                  <span>contato@hawtec.com.br</span>
+                  <span>hawtec.vendas01@gmail.com</span>
                 </div>
               </li>
               <li>
                 <div>
                   <ClockIcon h={20} w={20} color={Colors.WHITE} />
-                  <span>Segunda a Sexta: 9h às 18h | Sábado: 9h às 13h</span>
+                  <span>Segunda a Sexta: 8h às 18h | Sábado: 9h às 13h</span>
                 </div>
               </li>
             </ul>
@@ -61,7 +65,8 @@ export default function Contact() {
                 backgroundHoverColor={BackgroundHoverColors.PRIMARY}
                 hoverColor={HoverColors.WHITE}
                 color={Colors.PRIMARY}
-                href="/"
+                href={whatsappLink}
+                external
               >
                 WhatsApp
               </AFilled>
@@ -70,11 +75,12 @@ export default function Contact() {
                 backgroundHoverColor={BackgroundHoverColors.PRIMARY}
                 hoverColor={HoverColors.WHITE}
                 color={Colors.PRIMARY}
-                href="/"
+                href={InstagramLink}
+                external
               >
                 Instagram
               </AFilled>
-              <AFilled
+              {/* <AFilled
                 backgroundColor={BackgroundColors.WHITE}
                 backgroundHoverColor={BackgroundHoverColors.PRIMARY}
                 hoverColor={HoverColors.WHITE}
@@ -82,13 +88,13 @@ export default function Contact() {
                 href="/"
               >
                 Facebook
-              </AFilled>
+              </AFilled> */}
             </div>
           </div>
-          <div className="rounded-lg border bg-white p-6 shadow-sm text-gray-900">
+          {/* <div className="rounded-lg border bg-white p-6 shadow-sm text-gray-900">
             <H3>Envie uma Mensagem</H3>
             <ContactForm />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

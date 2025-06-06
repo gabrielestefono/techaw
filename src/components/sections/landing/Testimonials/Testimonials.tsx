@@ -4,7 +4,7 @@ import styles from './Testimonials.module.scss';
 
 export default function Testimonials() {
   return (
-    <section className={styles.testimonials}>
+    <section className={styles.testimonials} id="testemunhos">
       <div>
         <SectionHeaderWithSubtitleBared
           subtitle="Veja os depoimentos de clientes satisfeitos com nossos produtos e

@@ -4,15 +4,15 @@ import CpuIcon from "@/components/icons/CpuIcon";
 import { Colors } from "@/constants/Colors";
 import PrinterIcon from "@/components/icons/PrinterIcon";
 import WrenchIcon from "@/components/icons/WrenchIcon";
-import AFilled from "@/components/common/AFilled/AFilled";
-import { BackgroundColors } from "@/constants/BackgroundColors";
-import { BackgroundHoverColors } from "@/constants/BackgroundHoverColors";
-import { HoverColors } from "@/constants/HoverColors";
+// import AFilled from "@/components/common/AFilled/AFilled";
+// import { BackgroundColors } from "@/constants/BackgroundColors";
+// import { BackgroundHoverColors } from "@/constants/BackgroundHoverColors";
+// import { HoverColors } from "@/constants/HoverColors";
 import ServiceCardOutlined from "@/components/containers/ServiceCardOutlined/ServiceCardOutlined";
 
 export default function Services() {
   return (
-    <section className={styles.services}>
+    <section className={styles.services} id="servicos">
       <div>
         <SectionHeaderWithSubtitleBared
           title="Nossos Serviços"
@@ -21,7 +21,7 @@ export default function Services() {
         />
         <div>
           <ServiceCardOutlined
-            description="Computadores, notebooks, impressoras e periféricos das melhores
+            description="Projetores, ar-condicionados, ventiladores, computadores, notebooks, impressoras e periféricos das melhores
               marcas."
             icon={<CpuIcon h={32} w={32} color={Colors.WHITE} />}
             title="Venda de Equipamentos"
@@ -39,7 +39,7 @@ export default function Services() {
             title="Manutenção"
           />
         </div>
-        <div>
+        {/* <div>
           <AFilled
             backgroundColor={BackgroundColors.PRIMARY}
             backgroundHoverColor={BackgroundHoverColors.PRIMARYDARK}
@@ -49,7 +49,7 @@ export default function Services() {
           >
             Ver Todos os Serviços
           </AFilled>
-        </div>
+        </div> */}
       </div>
     </section>
   );

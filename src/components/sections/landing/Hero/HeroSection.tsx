@@ -25,7 +25,7 @@ export default function HeroSection() {
             </div>
             <div>
               <AFilled
-                href="/services"
+                href="/#servicos"
                 backgroundColor={BackgroundColors.WHITE}
                 backgroundHoverColor={BackgroundHoverColors.PRIMARY}
                 color={Colors.PRIMARY}

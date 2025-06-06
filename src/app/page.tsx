@@ -3,9 +3,10 @@ import styles from "../styles/Landing.module.scss";
 import HeroSection from "@/components/sections/landing/Hero/HeroSection";
 import About from "@/components/sections/landing/About/About";
 import Services from "@/components/sections/landing/Services/Services";
-import ProductsCategories from "@/components/sections/landing/ProductsCategories/ProductsCategories";
+// import ProductsCategories from "@/components/sections/landing/ProductsCategories/ProductsCategories";
 import Testimonials from "@/components/sections/landing/Testimonials/Testimonials";
 import Contact from "@/components/sections/landing/contact/Contact";
+import WhatsAppButton from "@/components/blocks/Whatsapp/WhatsAppButton";
 
 export default function Home() {
   return (
@@ -15,9 +16,10 @@ export default function Home() {
           <HeroSection />
           <About />
           <Services />
-          <ProductsCategories />
+          {/* <ProductsCategories /> */}
           <Testimonials />
           <Contact />
+          <WhatsAppButton/>
         </div>
       </div>
     </Landing>

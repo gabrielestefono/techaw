@@ -1,10 +1,10 @@
 import Link from "next/link";
 import styles from "./Header.module.scss";
 import Image from "next/image";
-import MagnifyingGlassIcon from "@/components/icons/MagnifyingGlassIcon";
+// import MagnifyingGlassIcon from "@/components/icons/MagnifyingGlassIcon";
 import ButtonWithIconLeftFilledOutlined from "@/components/common/ButtonWithIconLeftFilledOutlined/ButtonWithIconLeftFilledOutlined";
 import PhoneIcon from "@/components/icons/PhoneIcon";
-import ButtonFilledOutlined from "@/components/common/ButtonWithIconCenterFilledOutlined/ButtonWithIconCenterFilledOutlined";
+// import ButtonFilledOutlined from "@/components/common/ButtonWithIconCenterFilledOutlined/ButtonWithIconCenterFilledOutlined";
 import { BackgroundColors } from "@/constants/BackgroundColors";
 import { OutlineColors } from "@/constants/OutlineColors";
 import { Colors } from "@/constants/Colors";
@@ -25,21 +25,21 @@ export default function Header() {
           </Link>
         </div>
         <nav>
-          <Link href="/about">Sobre</Link>
-          <Link href="/services">Serviços</Link>
-          <Link href="/products">Produtos</Link>
-          <Link href="/#testimonials">Depoimentos</Link>
+          <Link href="/#sobre">Sobre</Link>
+          <Link href="/#servicos">Serviços</Link>
+          {/* <Link href="/#produtos">Produtos</Link> */}
+          <Link href="/#testemunhos">Depoimentos</Link>
           <Link href="/#contato">Contato</Link>
         </nav>
         <div>
-          <Link href="/products/search">
+          {/* <Link href="/products/search">
             <ButtonFilledOutlined
               backgroundColor={BackgroundColors.WHITE}
               outlineColor={OutlineColors.GRAY}
             >
               <MagnifyingGlassIcon h={16} w={16} />
             </ButtonFilledOutlined>
-          </Link>
+          </Link> */}
           <Link href="/#contato">
             <ButtonWithIconLeftFilledOutlined
               backgroundColor={BackgroundColors.PRIMARY}

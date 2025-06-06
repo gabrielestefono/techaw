@@ -10,7 +10,7 @@ import H3 from "@/components/common/H3/H3";
 
 export default function About() {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} id="sobre">
       <div>
         <SectionHeaderWithSubtitleBared
           title="Sobre a Haw Tec"

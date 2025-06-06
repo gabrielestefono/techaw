@@ -12,6 +12,7 @@ interface AFilledProps {
   color: ColorsType;
   hoverColor: HoverColorsType;
   backgroundHoverColor: BackgroundHoverColorsType;
+  external?: boolean;
 }
 
 export default function AFilled({
@@ -21,11 +22,13 @@ export default function AFilled({
   backgroundHoverColor,
   color,
   hoverColor,
+  external,
 }: Readonly<PropsWithChildren<AFilledProps>>) {
   return (
     <Link
       href={href}
       className={`${styles.aFilled} ${backgroundColor} ${color} ${hoverColor} ${backgroundHoverColor}`}
+      target={external ? "_blank" : "_self"}
     >
       {children}
     </Link>

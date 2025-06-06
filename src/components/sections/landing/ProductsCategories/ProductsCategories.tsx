@@ -11,7 +11,7 @@ import styles from "./ProductsCategories.module.scss";
 
 export default function ProductsCategories() {
   return (
-    <section className={styles.productsCategories}>
+    <section className={styles.productsCategories} id="produtos">
       <div>
         <SectionHeaderWithSubtitleBared
           subtitle="Explore nossa ampla gama de produtos de informática."
@@ -38,7 +38,7 @@ export default function ProductsCategories() {
           />
           <ProductCategoryCardOutlined
             title="Periféricos"
-            description="Teclados, mouses, monitores e outros acessórios"
+            description="Teclados, mouses, monitores, estabilizadores, nobeaks e outros acessórios"
             icon={<CpuIcon h={32} w={32} color={Colors.WHITE} />}
             // href="/products/peripherals"
           />
@@ -47,12 +47,6 @@ export default function ProductsCategories() {
             description="Roteadores, switches e equipamentos de rede"
             icon={<CpuIcon h={32} w={32} color={Colors.WHITE} />}
             // href="/products/networking"
-          />
-          <ProductCategoryCardOutlined
-            title="Softwares"
-            description="Sistemas operacionais, antivírus e aplicativos"
-            icon={<CpuIcon h={32} w={32} color={Colors.WHITE} />}
-            // href="/products/software"
           />
         </div>
         <div>
