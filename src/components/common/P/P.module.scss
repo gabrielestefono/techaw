@@ -1,3 +1,9 @@
+@mixin desktop() {
+  @media screen and (min-width: 1440px) {
+    @content();
+  }
+}
+
 // Tipos padrão
 .p {
   width: 100%;
@@ -5,14 +11,24 @@
 
 .subtitle {
   color: #6a7282;
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.75rem;
+
+  @include desktop() {
+    font-size: 1.125rem;
+  }
 }
 
 .sectionSubtitle {
   color: #e5e7eb;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.75rem;
+  margin-bottom: 1.5rem;
+
+  @include desktop() {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
 }
 
 .textPrimary {
@@ -20,7 +36,12 @@
 }
 
 .textSecondary {
+  font-size: .875rem;
   color: #ffffff;
+  
+  @include desktop() {
+    font-size: 1rem;
+  }
 }
 
 .textTerciary {

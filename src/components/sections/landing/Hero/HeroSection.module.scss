@@ -1,3 +1,9 @@
+@mixin desktop() {
+  @media screen and (min-width: 1440px) {
+    @content();
+  }
+}
+
 .heroSection {
   width: 100%;
   padding-block: 8rem;
@@ -12,10 +18,16 @@
     padding-inline: 2rem;
 
     > div {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
       align-items: center;
+
+      @include desktop() {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+      }
 
       > div:first-child {
         display: flex;
@@ -27,7 +39,7 @@
           gap: 0.5rem;
 
           > div {
-            margin-top: .5rem;
+            margin-top: 0.5rem;
           }
         }
 

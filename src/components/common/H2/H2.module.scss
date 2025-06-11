@@ -1,11 +1,25 @@
+@mixin desktop() {
+  @media screen and (min-width: 1440px) {
+    @content();
+  }
+}
+
 .h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #0a3b66;
+
+  @include desktop() {
+    font-size: 3rem;
+  }
 }
 
 .h2Secodary {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #ffffff;
+
+  @include desktop() {
+    font-size: 3rem;
+  }
 }

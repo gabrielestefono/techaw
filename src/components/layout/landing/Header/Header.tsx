@@ -8,6 +8,7 @@ import PhoneIcon from "@/components/icons/PhoneIcon";
 import { BackgroundColors } from "@/constants/BackgroundColors";
 import { OutlineColors } from "@/constants/OutlineColors";
 import { Colors } from "@/constants/Colors";
+import BarsIcon from "@/components/icons/BarsIcon";
 
 export default function Header() {
   return (
@@ -50,6 +51,18 @@ export default function Header() {
               Contato
             </ButtonWithIconLeftFilledOutlined>
           </Link>
+        </div>
+        <div>
+          <button>
+            <BarsIcon h={24} w={24} color={Colors.BLACK} />
+          </button>
+          <aside>
+            <Link href="/#sobre">Sobre</Link>
+            <Link href="/#servicos">Serviços</Link>
+            {/* <Link href="/#produtos">Produtos</Link> */}
+            <Link href="/#testemunhos">Depoimentos</Link>
+            <Link href="/#contato">Contato</Link>
+          </aside>
         </div>
       </div>
     </header>

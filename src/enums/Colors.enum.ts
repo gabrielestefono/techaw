@@ -5,4 +5,5 @@ export enum Colors {
   PRIMARY = "primary",
   PRIMARYDARK = "primary-dark",
   YELLOW = "yellow",
+  BLACK = "black",
 }

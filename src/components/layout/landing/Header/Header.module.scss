@@ -1,3 +1,9 @@
+@mixin desktop() {
+  @media screen and (min-width: 1440px) {
+    @content();
+  }
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -8,6 +14,11 @@
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
+  padding-inline: 2rem;
+
+  @include desktop(){
+    padding-inline: 0;
+  }
 
   > div {
     display: flex;
@@ -42,8 +53,12 @@
     }
 
     > nav {
-      display: flex;
+      display: none;
       gap: 1.5rem;
+
+      @include desktop() {
+        display: flex;
+      }
 
       > a {
         text-decoration: none;
@@ -60,12 +75,28 @@
     }
 
     > div:nth-child(3) {
-      display: flex;
+      display: none;
       align-items: center;
       gap: 1rem;
+      @include desktop() {
+        display: flex;
+      }
 
       > a {
         display: flex;
+      }
+    }
+
+    > div:nth-child(4) {
+      display: flex;
+
+      > button{
+        background-color: transparent;
+        border: none;
+      }
+
+      > aside{
+        display: none;
       }
     }
   }

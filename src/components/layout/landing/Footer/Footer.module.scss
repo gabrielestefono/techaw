@@ -1,3 +1,9 @@
+@mixin desktop() {
+  @media screen and (min-width: 1440px) {
+    @content();
+  }
+}
+
 .footer {
   width: 100%;
   background-color: var(--white);
@@ -14,11 +20,15 @@
     > div:first-child {
       display: flex;
       width: 100%;
-      flex-direction: row;
+      flex-direction: column;
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
       padding-inline: 1.5rem;
+      
+      @include desktop {
+        flex-direction: row;
+      }
 
       > div:first-child {
         display: flex;

@@ -34,28 +34,30 @@ export default function Contact() {
               <li>
                 <div>
                   <MapPinIcon h={20} w={20} color={Colors.WHITE} />
-                  <span>
+                  <P variation="secondary">
                     QN 506 CONJUNTO 03 LOTE 02 - LOJA 04 SAMAMBAIA SUL-,
                     Brasília, Brazil 72312.003
-                  </span>
+                  </P>
                 </div>
               </li>
               <li>
                 <div>
                   <PhoneIcon h={20} w={20} color={Colors.WHITE} />
-                  <span>(61) 9-9106-4220</span>
+                  <P variation="secondary">(61) 9-9106-4220</P>
                 </div>
               </li>
               <li>
                 <div>
                   <EmailIcon h={20} w={20} color={Colors.WHITE} />
-                  <span>hawtec.vendas01@gmail.com</span>
+                  <P variation="secondary">hawtec.vendas01@gmail.com</P>
                 </div>
               </li>
               <li>
                 <div>
                   <ClockIcon h={20} w={20} color={Colors.WHITE} />
-                  <span>Segunda a Sexta: 8h às 18h | Sábado: 9h às 13h</span>
+                  <P variation="secondary">
+                    Segunda a Sexta: 8h às 18h | Sábado: 9h às 13h
+                  </P>
                 </div>
               </li>
             </ul>

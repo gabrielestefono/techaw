@@ -1,3 +1,9 @@
+@mixin desktop() {
+  @media screen and (min-width: 1440px) {
+    @content();
+  }
+}
+
 .contact {
   width: 100%;
   padding-block: 8rem;
@@ -17,7 +23,11 @@
       gap: 3rem;
       width: 100%;
       justify-content: space-between;
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
+
+      @include desktop() {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
       > div:first-child {
         display: flex;
@@ -54,6 +64,11 @@
         > div:nth-child(3) {
           display: flex;
           gap: 1rem;
+          padding-top: 1rem;
+
+          @include desktop() {
+            padding-top: 0;
+          }
         }
       }
 
