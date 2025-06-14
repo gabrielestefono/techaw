@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.techaw.com.br
+
+# Sitemaps
+Sitemap: https://www.techaw.com.br/sitemap.xml
