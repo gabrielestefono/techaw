@@ -3,8 +3,8 @@ import "../styles/global.scss";
 import { inter } from "./fonts";
 
 export const metadata: Metadata = {
-  title: "Haw Tec | Serviços, Equipamentos, Suprimentos e Manutenção de Informática em Brasília",
-  description: "A Haw Tec oferece equipamentos, serviços, suprimentos e manutenção de informática em Brasília. Atendimento ágil e entrega gratuita para sua empresa ou residência.",
+  title: "Haw Tec | Equipamentos e Manutenção de Informática em Brasília",
+  description: "A Haw Tec oferece equipamentos, serviços, suprimentos e manutenção de informática em Brasília. Entrega gratuita para sua empresa ou residência.",
   alternates: {
     languages: {
       "pt-BR": "https://techaw.com.br",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Haw Tec | Equipamentos e Manutenção de Informática em Brasília",
-    description: "Soluções em informática, manutenção, equipamentos e suprimentos para empresas e residências em Brasília. Atendimento ágil e entrega gratuita.",
+    description: "Soluções em informática, manutenção, equipamentos e suprimentos para empresas e residências em Brasília. Entrega gratuita.",
     type: "website",
     url: "https://www.techaw.com.br",
     images: [
