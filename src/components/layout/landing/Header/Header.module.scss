@@ -9,8 +9,8 @@
   top: 0;
   z-index: 50;
   width: 100%;
-  border-bottom: 1px solid #000;
-  background-color: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #e2e8f0;
+  background-color: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(10px);
   display: flex;
   justify-content: center;
@@ -78,12 +78,18 @@
       display: none;
       align-items: center;
       gap: 1rem;
+
       @include desktop() {
         display: flex;
       }
 
       > a {
         display: flex;
+        text-decoration: none;
+
+        > button{
+          border: none;
+        }
       }
     }
 
